@@ -1,10 +1,10 @@
 # Si-SiO2 NBTI: Data and Code Repository
 
-This repository contains the simulation data, computational codes, and analysis scripts for the research article on Negative Bias Temperature Instability (NBTI) in Si-SiO2 interfaces.
+This repository contains the simulation pameters, simulation results, and analysis scripts used in the published article XXX.
 
 ## 📋 Overview
 
-This project investigates NBTI reliability mechanisms in Si-SiO2 systems through first-principles calculations and reliability simulations. The repository provides all necessary data and code to reproduce the results presented in the associated research article.
+This project investigates NBTI reliability mechanisms in Si/SiO2 MOSFETs through first-principles calculations and reliability simulations. The repository provides all necessary data and code to reproduce the results presented in the associated research article.
 
 ## 📁 Repository Structure
 
@@ -32,33 +32,27 @@ Si-SiO2_NBTI/
 
 #### 2. **DeltaVth**
 - Calculates threshold voltage shift (ΔVth) over time
-- Analyzes NBTI degradation kinetics
 - Processes experimental and simulation data
 
 #### 3. **E_R-E_t-map**
 - Creates 2D maps of relaxation energy (E_R) vs. trap energy (E_t)
 - Identifies dominant defect configurations
-- Statistical analysis of defect distributions
 
 #### 4. **Rate_Compare**
-- Compares charge capture and emission rates
-- Temperature and field dependence analysis
+- Compares charge capture rates of V_O^0 (Si-dimer) -- V_O^+ (Si-dimer) with that of V_O^0 (Si-dimer) -- V_O^+ (Inplane)
+- Field dependence analysis
 - Multi-phonon transition rate calculations
 
 ### Simulation_Parameters_and_OUT Directory
 
 #### 1. **DFT**
 Contains first-principles calculation data including:
-- Atomic structure files
-- Electronic structure calculations
-- Formation energies and charge transition levels
-- Defect geometries and configurations
+- INCAR, KPOINTS, POTCAR (Only head), OSICAR
 
 #### 2. **Reliability_Simulation**
 Contains reliability modeling data including:
 - Simulation input parameters
 - Time-dependent degradation data
-- Temperature and bias condition specifications
 - Output files and analysis results
 
 ## 🚀 Getting Started
@@ -66,10 +60,9 @@ Contains reliability modeling data including:
 ### Prerequisites
 
 The codes in this repository may require:
-- Python 3.x (for data analysis scripts)
-- MATLAB/Octave (for visualization)
+- Python 3.10 (for data analysis scripts)
 - NumPy, SciPy, Matplotlib (Python packages)
-- DFT software outputs (VASP, Quantum ESPRESSO, etc.)
+- DFT software outputs (VASP)
 
 ### Usage
 
@@ -87,12 +80,6 @@ The codes in this repository may require:
 3. **Run analysis scripts**
    - Follow instructions in individual code directories
    - Modify parameters as needed for your analysis
-
-## 📊 Data Format
-
-- **DFT outputs**: Standard quantum chemistry file formats (POSCAR, OUTCAR, etc.)
-- **Simulation data**: Text files, CSV, or MAT format
-- **Analysis results**: Figures in PNG/PDF format, data tables in CSV
 
 ## 📖 Citation
 
@@ -134,13 +121,9 @@ This is a research data repository associated with a published article. For ques
 ## 👥 Authors
 
 **Xinjing Guo**
-- [Institution/Affiliation]
-- [Contact Email]
+- [Fudan University]
+- [xinjingguo22@m.fudan.edu.cn]
 
-## 🔗 Related Publications
-
-1. [Article 1]: [Brief description]
-2. [Article 2]: [Brief description]
 
 ## 📝 Notes
 
@@ -150,16 +133,15 @@ This is a research data repository associated with a published article. For ques
 
 ## ⚙️ Computational Details
 
-- **DFT Calculations**: [Software/Method used]
-- **Basis Sets**: [Basis set information]
-- **Exchange-Correlation Functional**: [e.g., PBE, HSE06]
-- **K-point Sampling**: [K-point mesh details]
+- **DFT Calculations**: [VASP used]
+- **Exchange-Correlation Functional**: [HSE]
+- **K-point Sampling**: [Gamma]
 - **Convergence Criteria**: [Energy/force convergence]
 
 ## 📧 Contact
 
 For questions about the code, data, or methodology:
-- **Email**: [corresponding.author@email.com]
+- **Email**: [chensy@fuda.edu.cn]
 - **GitHub Issues**: [repository issues page]
 
 ---
