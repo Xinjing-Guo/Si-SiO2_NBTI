@@ -142,7 +142,7 @@ This is a research data repository associated with a published article. For ques
 
 For questions about the code, data, or methodology:
 - **Email**: [chensy@fuda.edu.cn]
-- **GitHub Issues**: [repository issues page]
+- **GitHub Issues**: [[repository issues page](https://github.com/Xinjing-Guo/Si-SiO2_NBTI/issues)]
 
 ---
 
